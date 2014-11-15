@@ -19,15 +19,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     Teacher *tea1 = [[Teacher alloc] init];
-    tea1.teacherAge = @"10";
-    tea1.teacherAge = @"11";
+    tea1.teacherAge = @10;
     Name *nam1 = [[Name alloc] init];
     nam1.nameCStr = @"namename1";
     tea1.nameModal = nam1;
     
     Teacher *tea2 = [[Teacher alloc] init];
-    tea2.teacherAge = @"20";
-    tea2.teacherAge = @"18";
+    tea2.teacherAge = @20;
     Name *nam2 = [[Name alloc] init];
     nam2.nameCStr = @"namename2";
     tea2.nameModal = nam2;
@@ -39,9 +37,14 @@
 
     ///////=================================
     
+    arr = [WSTransObj modalArray_from_dictionaryArr:dicArr];
+    dicArr = [WSTransObj dictionaryArray_from_modalArray:arr];
+    NSLog(@"没有token：%@",dicArr);
+    
+    
     arr = [WSTransObj modalArray_from_dictionaryArr:dicArr token:@"wangsen"];
     dicArr = [WSTransObj dictionaryArray_from_modalArray:arr];
-    NSLog(@"===%@",dicArr);
+    NSLog(@"有token：%@",dicArr);
 
     //    NSLog(@"=============");
     //    NSDictionary *dic = dicArr[0];
