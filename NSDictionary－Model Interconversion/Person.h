@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "WSObject.h"
-@interface Person : WSObject
+@interface Person : NSObject
 @property (nonatomic,copy)NSString *teacherAge;
 @end

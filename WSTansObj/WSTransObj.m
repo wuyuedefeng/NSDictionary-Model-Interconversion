@@ -7,7 +7,8 @@
 //
 
 #import "WSTransObj.h"
-#import "WSObject.h"
+#import "NSDate+WSCategory.h"
+#import "NSString+WSCategory.h"
 static NSMutableDictionary *modalKeyGlobal;
 //用于 创建的数据模型属性的Get和Set方法 Get方法在NSPredicate中用到 set方法暂未用到 不知道以后可用到什么场景 暂留
 //get方法

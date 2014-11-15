@@ -14,6 +14,12 @@
 		3627A3F31A17A7800092686D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3627A3F21A17A7800092686D /* Images.xcassets */; };
 		3627A3F61A17A7800092686D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3627A3F41A17A7800092686D /* LaunchScreen.xib */; };
 		3627A4021A17A7800092686D /* NSDictionary_Model_InterconversionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3627A4011A17A7800092686D /* NSDictionary_Model_InterconversionTests.m */; };
+		3627A4111A17A7DF0092686D /* WSTransObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 3627A40F1A17A7DF0092686D /* WSTransObj.m */; };
+		3627A4141A17A8AB0092686D /* NSDate+WSCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3627A4131A17A8AB0092686D /* NSDate+WSCategory.m */; };
+		3627A4171A17A8BF0092686D /* NSString+WSCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3627A4161A17A8BF0092686D /* NSString+WSCategory.m */; };
+		3627A41E1A17AB3D0092686D /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 3627A4191A17AB3D0092686D /* Person.m */; };
+		3627A41F1A17AB3D0092686D /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 3627A41B1A17AB3D0092686D /* Teacher.m */; };
+		3627A4201A17AB3D0092686D /* Name.m in Sources */ = {isa = PBXBuildFile; fileRef = 3627A41D1A17AB3D0092686D /* Name.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +46,18 @@
 		3627A3FB1A17A7800092686D /* NSDictionary－Model InterconversionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NSDictionary－Model InterconversionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3627A4001A17A7800092686D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3627A4011A17A7800092686D /* NSDictionary_Model_InterconversionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSDictionary_Model_InterconversionTests.m; sourceTree = "<group>"; };
+		3627A40E1A17A7DF0092686D /* WSTransObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSTransObj.h; sourceTree = "<group>"; };
+		3627A40F1A17A7DF0092686D /* WSTransObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSTransObj.m; sourceTree = "<group>"; };
+		3627A4121A17A8AB0092686D /* NSDate+WSCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+WSCategory.h"; sourceTree = "<group>"; };
+		3627A4131A17A8AB0092686D /* NSDate+WSCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+WSCategory.m"; sourceTree = "<group>"; };
+		3627A4151A17A8BF0092686D /* NSString+WSCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+WSCategory.h"; sourceTree = "<group>"; };
+		3627A4161A17A8BF0092686D /* NSString+WSCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+WSCategory.m"; sourceTree = "<group>"; };
+		3627A4181A17AB3D0092686D /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		3627A4191A17AB3D0092686D /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		3627A41A1A17AB3D0092686D /* Teacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teacher.h; sourceTree = "<group>"; };
+		3627A41B1A17AB3D0092686D /* Teacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
+		3627A41C1A17AB3D0092686D /* Name.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Name.h; sourceTree = "<group>"; };
+		3627A41D1A17AB3D0092686D /* Name.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Name.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +81,7 @@
 		3627A3D91A17A7800092686D = {
 			isa = PBXGroup;
 			children = (
+				3627A40B1A17A7DF0092686D /* WSTansObj */,
 				3627A3E41A17A7800092686D /* NSDictionary－Model Interconversion */,
 				3627A3FE1A17A7800092686D /* NSDictionary－Model InterconversionTests */,
 				3627A3E31A17A7800092686D /* Products */,
@@ -85,6 +104,12 @@
 				3627A3EA1A17A7800092686D /* AppDelegate.m */,
 				3627A3EC1A17A7800092686D /* ViewController.h */,
 				3627A3ED1A17A7800092686D /* ViewController.m */,
+				3627A4181A17AB3D0092686D /* Person.h */,
+				3627A4191A17AB3D0092686D /* Person.m */,
+				3627A41A1A17AB3D0092686D /* Teacher.h */,
+				3627A41B1A17AB3D0092686D /* Teacher.m */,
+				3627A41C1A17AB3D0092686D /* Name.h */,
+				3627A41D1A17AB3D0092686D /* Name.m */,
 				3627A3EF1A17A7800092686D /* Main.storyboard */,
 				3627A3F21A17A7800092686D /* Images.xcassets */,
 				3627A3F41A17A7800092686D /* LaunchScreen.xib */,
@@ -117,6 +142,19 @@
 				3627A4001A17A7800092686D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3627A40B1A17A7DF0092686D /* WSTansObj */ = {
+			isa = PBXGroup;
+			children = (
+				3627A4151A17A8BF0092686D /* NSString+WSCategory.h */,
+				3627A4161A17A8BF0092686D /* NSString+WSCategory.m */,
+				3627A4121A17A8AB0092686D /* NSDate+WSCategory.h */,
+				3627A4131A17A8AB0092686D /* NSDate+WSCategory.m */,
+				3627A40E1A17A7DF0092686D /* WSTransObj.h */,
+				3627A40F1A17A7DF0092686D /* WSTransObj.m */,
+			);
+			path = WSTansObj;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +257,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3627A41F1A17AB3D0092686D /* Teacher.m in Sources */,
+				3627A4201A17AB3D0092686D /* Name.m in Sources */,
 				3627A3EE1A17A7800092686D /* ViewController.m in Sources */,
+				3627A4171A17A8BF0092686D /* NSString+WSCategory.m in Sources */,
+				3627A41E1A17AB3D0092686D /* Person.m in Sources */,
 				3627A3EB1A17A7800092686D /* AppDelegate.m in Sources */,
+				3627A4111A17A7DF0092686D /* WSTransObj.m in Sources */,
+				3627A4141A17A8AB0092686D /* NSDate+WSCategory.m in Sources */,
 				3627A3E81A17A7800092686D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,6 +10,4 @@
 #import "Name.h"
 @interface Teacher : Person
 @property (nonatomic,strong)Name *nameModal;
-@property (nonatomic,copy)NSString *teacherAge;
-@property (nonatomic,copy)NSNumber *teacherAge2;
 @end

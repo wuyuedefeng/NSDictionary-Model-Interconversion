@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "WSObject.h"
-@interface Name : WSObject
+@interface Name : NSObject
 @property (nonatomic,copy)NSString *nameCStr;
 @end
