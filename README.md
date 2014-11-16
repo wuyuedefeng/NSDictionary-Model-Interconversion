@@ -9,13 +9,14 @@
 对字典转换成模型可以使用默认方式，或者创建时候同时传入token值，token创建类的标识，通过token可以获得一个model新对象，然后对新对象进行数据操作等。  NSDictionary类的条件key－value键值对 的value值可以为NSString、NSNumber、甚至是NSDictionary类型。 当对象字典内部key的value值还是字典时，该value转化后的model对象的token就是该字典对应的key值。
 转换后的模型支持系统相同方法，valueForKey:，seValueForKey:，和平时操作自己创建的类使用赋值方法完全相同（小缺点：由于使用基类对象作为后者对象的类型，所有不支持点语法，所以请使用valueForKey:，seValueForKey:）
 
-## 开源
+## 单个对象和字典相互转换
 
 经过几个月的使用和测试，我认为它非常好用，而且代码也非常简单。所以现在开源分享给大家，以下是使用说明，结果查看，请下载源码，希望大家能够多多支持。您的小小的支持，就是我莫大的动力。
 以下是用法介绍：
 
 ```
-`+ (id)modal_from_dictionary:(NSDictionary *)dic;`是将字典转换成模型（支持字典里面包含字典的深度转寒）
+由于单model和NSDictionary对象时对象数组相互转化的单例，在这里只做函数介绍，相信大家一看就懂
+`+ (id)modal_from_dictionary:(NSDictionary *)dic;`是将字典转换成模型（支持字典里面包含字典的深度转换）
 `+ (id)modal_from_dictionary:(NSDictionary *)dic token:(NSString*)token;`是将字典转换成模型，并添加token
 `+ (id)modalFromToken:(NSString *)token;`使用token创建一个新的对象model
 `+ (void)removeToken:(NSString *)token;`移除某个token
@@ -24,6 +25,7 @@
 ```
 `+ (id)dictionary_from_modal:(id)modol`将模型队形转换成字典（支持对象的继承和包含转换）
 
+## 对象数组和字典数组相互转换（在这里做了详细的举例说明）
 
 ```
 在这里举例说明使用字典数组<->model数组之间的相互转化：
