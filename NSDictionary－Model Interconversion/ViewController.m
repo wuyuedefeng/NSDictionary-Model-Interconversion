@@ -42,16 +42,16 @@
     NSLog(@"没有token：%@",dicArr);
     
     
-    arr = [WSTransObj modalArray_from_dictionaryArr:dicArr token:@"wangsen"];
+    arr = [WSTransObj modalArray_from_dictionaryArr:dicArr token:@"WS"];
     dicArr = [WSTransObj dictionaryArray_from_modalArray:arr];
     NSLog(@"有token：%@",dicArr);
 
-    //    NSLog(@"=============");
-    //    NSDictionary *dic = dicArr[0];
 
-
-    WSTransObj *modal2 = [WSTransObj modalFromToken:@"wangsen"];
+    WSTransObj *modal2 = [WSTransObj modalFromToken:@"WS"];
     [modal2 setValue:@"111" forKey:@"teacherAge"];
+    
+    [WSTransObj removeToken:@"WS"];//以后不再使用该token可移除
+
 
 
     id modal3 = [modal2 valueForKey:@"nameModal"];

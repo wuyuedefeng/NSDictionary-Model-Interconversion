@@ -12,8 +12,21 @@
 ## 开源
 
 经过几个月的使用和测试，我认为它非常好用，而且代码也非常简单。所以现在开源分享给大家，以下是使用说明，结果查看，请下载源码，希望大家能够多多支持。您的小小的支持，就是我莫大的动力。
+以下是用法介绍：
 
 ```
+`+ (id)modal_from_dictionary:(NSDictionary *)dic;`是将字典转换成模型（支持字典里面包含字典的深度转寒）
+`+ (id)modal_from_dictionary:(NSDictionary *)dic token:(NSString*)token;`是将字典转换成模型，并添加token
+`+ (id)modalFromToken:(NSString *)token;`使用token创建一个新的对象model
+`+ (void)removeToken:(NSString *)token;`移除某个token
+`+ (void)removeAllToken;`移除所有token
+
+```
+`+ (id)dictionary_from_modal:(id)modol`将模型队形转换成字典（支持对象的继承和包含转换）
+
+
+```
+在这里举例说明使用字典数组<->model数组之间的相互转化：
 Teacher是一个类继承自Person类，Person类含有属性teacherAge，Name（也是一个类）是Tearcher类中包含的一个属性，Name类中包含属性nameCStr，以下是使用方法演示
 Teacher *tea1 = [[Teacher alloc] init];
 tea1.teacherAge = @10;
@@ -39,13 +52,16 @@ dicArr = [WSTransObj dictionaryArray_from_modalArray:arr];
 NSLog(@"没有token：%@",dicArr);
 
 通过`modalArray_from_dictionaryArr:token:`方法，可以讲模型转换成字典，token为以后创建一个新的model做标识，如下所示：
-arr = [WSTransObj modalArray_from_dictionaryArr:dicArr token:@"wangsen"];
+arr = [WSTransObj modalArray_from_dictionaryArr:dicArr token:@"WS"];
 dicArr = [WSTransObj dictionaryArray_from_modalArray:arr];
 NSLog(@"有token：%@",dicArr);
 
 上面传入token在这里可以使用`modalFromToken:`创建创建一个新的model对象(在这里相当于创建了一个Teacher类),然后对新对象赋值，如下所示：
-WSTransObj *modal2 = [WSTransObj modalFromToken:@"wangsen"];
+WSTransObj *modal2 = [WSTransObj modalFromToken:@"WS"];
 [modal2 setValue:@"111" forKey:@"teacherAge"];
+
+[WSTransObj removeToken:@"WS"];//以后不再使用该token可移除
+
 
 该处是取得Teacher类中包含的Name类的对象，并对其赋值
 id modal3 = [modal2 valueForKey:@"nameModal"];

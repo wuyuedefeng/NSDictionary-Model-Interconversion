@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>228F42E2-FD57-4EC2-9B0C-FCC6CBDA80C0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>NSDictionary－Model Interconversion</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9CECF2FA4EB6403D160DABACAB17B736B7625F67</key>
+		<string>https://github.com/wuyuedefeng/NSDictionary-Model-Interconversion.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>NSDictionary－Model Interconversion.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9CECF2FA4EB6403D160DABACAB17B736B7625F67</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/wuyuedefeng/NSDictionary-Model-Interconversion.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9CECF2FA4EB6403D160DABACAB17B736B7625F67</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9CECF2FA4EB6403D160DABACAB17B736B7625F67</string>
+			<key>IDESourceControlWCCName</key>
+			<string>NSDictionary%EF%BC%8DModel%20Interconversion</string>
+		</dict>
+	</array>
+</dict>
+</plist>
